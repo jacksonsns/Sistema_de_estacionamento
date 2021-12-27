@@ -1,7 +1,15 @@
 # Microssistema para gererenciamento estacionamentos
 <p> Microssistema para gererenciamento estacionamentos utilizando Docker,  Apache, PHP 7, MySQL e phpMyAdmin. <p>
+   <b> Funcionalidades:</b>
   
- <b> Pré requisitos:</b> Docker e Docker Compose 
+  * Listar clientes;
+  * Consultar dados;
+  * Cadastrar;
+  * Editar;
+  * Apagar;
+  * Buscar por placa.
+  
+ <b> Pré-requisitos:</b> Docker e Docker Compose 
   
 ```console
   # Criar e levantar os containers
