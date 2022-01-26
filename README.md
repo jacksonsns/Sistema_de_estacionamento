@@ -1,45 +1,15 @@
-# Microssistema para gererenciamento estacionamentos
-<p> Microssistema para gererenciamento estacionamentos utilizando PHP 7, Codelgniter 3, Docker, Docker Compose, Apache, MySQL e phpMyAdmin. <p>
-   <b> Funcionalidades:</b>
-  
-  * Listar clientes;
-  * Consultar dados;
-  * Cadastrar;
-  * Editar;
-  * Apagar;
-  * Buscar por placa.
-  
- <b> Pré-requisitos:</b> Docker e Docker Compose 
+# Introdução
+<p> Microssistema básico para gererenciamento estacionamentos utilizando PHP 7, Codelgniter 3, MySQL e Bootstrap 4. <p>
+   <b> Requisitos:</b>
+  Este sistena requer PHP 7.4 ou posterior.
+   
+<p> Como rodar o sistema: </p>
   
 ```console
-  # Criar e levantar os containers
-$ docker-compose up -d
-
-# Iniciar o container Docker
-$ docker-compose start
-
-# Parar o container Docker
-docker-compose stop
-
-# Parar e remover containers da máquina
-$ docker-compose down
-  
-```
-  
-  <b>Para acessar o localhost:</b>
-
-
-```bash
-http://localhost:4500
+  # Para rodar é bem simples. Digite esse comando na pasta raiz do projeto
+$ php -S localhost:8080
 
 ```
-<b> Acesso phpMyAdmin </b>
 
- ```bash
- 
- http://localhost:8080
-
-login: root
-senha: root
-
-```
+# Imagem do projeto: 
+![image](https://user-images.githubusercontent.com/23295033/151176276-d445ca23-a672-4c57-a9d1-e7bfa2391169.png)
