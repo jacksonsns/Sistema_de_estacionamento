@@ -11,8 +11,8 @@ class Clientes extends CI_Controller {
 		$data['cadastros'] = $this->clientes_model->all('clientes');
 
 		$this->load->view('theme/header');       
-        $this->load->view('clientes/index', $data);
-       	$this->load->view('theme/footer');
+		$this->load->view('clientes/index', $data);
+		$this->load->view('theme/footer');
 		
 	}
 
@@ -22,12 +22,13 @@ class Clientes extends CI_Controller {
 
 		if($this->input->post($_POST)) {
 			$this->clientes_model->inserirUsuario();
+			
 			redirect(base_url('/'));
 		}
 		
 		$this->load->view('theme/header');       
-        $this->load->view('clientes/inserir');
-       	$this->load->view('theme/footer');
+		$this->load->view('clientes/inserir');
+		$this->load->view('theme/footer');
 	}
 
 	public function editarUsuario($id) {
@@ -38,18 +39,20 @@ class Clientes extends CI_Controller {
 		
 		if($this->input->post($_POST)) {
 			$this->clientes_model->editarDados($id);
+			
 			redirect(base_url('/'));
 		}
 
 		$this->load->view('theme/header');       
-        $this->load->view('clientes/editar', $data);
-       	$this->load->view('theme/footer');
+		$this->load->view('clientes/editar', $data);
+		$this->load->view('theme/footer');
 	}
 
 	public function apagarUsuario($id) {
 
 		$this->load->model('clientes_model');
 		$this->clientes_model->removerUsuario($id);
+		
 		redirect(base_url('/'));
 	}
 
